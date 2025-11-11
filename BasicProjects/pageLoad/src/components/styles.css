@@ -1,0 +1,102 @@
+body {
+  background-color: #f5f5f5; /* light grey background around */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.Main-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+
+.product {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product div {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product span:first-child {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.product span:last-child {
+  font-weight: 500;
+  color: #e63946;
+  font-size: 0.9rem;
+}
+
+/* Button Section */
+.button-container {
+  text-align: center;
+  margin-top: 20px;  /* increase top gap */
+  padding-top: 20px; /* gives breathing space */
+  border-top: 1px solid #eee; /* optional subtle separator */
+}
+.button-container button {
+  
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.button-container button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Loading Text */
+.Main-container > div:first-child {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .product img {
+    height: 150px;
+  }
+}
+
+
