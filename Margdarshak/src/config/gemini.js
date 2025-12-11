@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Hardcode your API key here
-const ai = new GoogleGenerativeAI("AIzaSyCXmmgZZvy9Qw4nKeegY3sqMD-hJwvZhDw");
+const ai = new GoogleGenerativeAI("");
 
 export async function runChat(prompt) {
   try {
