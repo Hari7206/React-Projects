@@ -1,0 +1,61 @@
+
+
+    /* heading section */
+.hero-section .heading .main-heading h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 50px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.hero-section .heading .sub-heading h5 {
+    color: #5a5959a2;
+
+}
+
+.hero-section .buttons .shop-now {
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    width: 118px;
+    height: 38px;
+    font-family: "Inter", " Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    background-color: #D01C28;
+    border: none;
+    border-radius: 3px;
+}
+
+/* img section */
+
+
+
+/*  button section */
+.hero-section .buttons .category {
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    width: 118px;
+    height: 38px;
+    font-family: "Inter", " Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    color: #5A5959;
+    background: transparent;
+    border: none;
+    border: 1px solid ;
+    border-radius: 3px;
+}
+
+/* footer */
+.hero-section  .footer p{
+     font-family: "Barlow Semi Condensed", sans-serif;
+color: #5A5959;
+font-weight: 100;
+font-size: 15px;
+}
+/* footer img */
+.hero-section  .footer img{
+    width: 50px;
+}
