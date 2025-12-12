@@ -1,12 +1,11 @@
-import { useState } from 'react'
 import Hero from './components/Hero'
-import './App.css'
+import './index.css'
 
 function App() {
   return (
-  <main className='relative min-h-screen w-screen overflow-x-hidden'>
-      <Hero/>
-  </main>
+    <main className='relative min-h-screen w-full overflow-x-hidden'>
+      <Hero />
+    </main>
   )
 }
 

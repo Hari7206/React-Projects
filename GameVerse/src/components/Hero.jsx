@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react'
 
 function Hero() {
-
   const [currentIndex, setCurrentIndex] = useState(1)
   const [hasClicked, setHasClicked] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
@@ -24,13 +23,14 @@ function Hero() {
   const getVideoSrc = (index) => `videos/hero-${index}.mp4`
 
   return (
-    <div className='relative h-dvh w-screen overflow-x-hidden'>
-      <div id='video-frame' className='relative z-10 h-dvh  w-screen overflow-hidden rounded-lg bg-blue-75'>
+    <div className='relative h-dvh w-full overflow-x-hidden'>
+      <div id='video-frame' className='relative z-10 h-dvh w-full overflow-hidden rounded-lg bg-blue-75'>
 
         <div>
           <div className='mask-clip-path absolute-center z-50 size-64 cursor-pointer overflow-hidden rounded-lg'>
             <div
               onClick={handleMiniVdClick}
+              /* Hover Reveal Logic: opacity-0 (invisible) -> hover:opacity-100 (visible) */
               className='origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100 '
             >
               <video
@@ -56,6 +56,7 @@ function Hero() {
           />
 
           <video
+            key={currentIndex}
             src={getVideoSrc(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
             autoPlay
             loop

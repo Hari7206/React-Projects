@@ -20,10 +20,9 @@ const ContextProvider = (props) => {
         setLoading(false);
         setInput("");
 
-        return response; // allows console access
+        return response; 
     };
 
-    // Make onSent global so you can call in console
     window.onSent = onSent;
 
     const contextValue = {
